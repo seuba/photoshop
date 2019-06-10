@@ -1,6 +1,6 @@
 <?php 
 $imag = $_GET['imag'];
-copy($imag, 'file2.png');
+
 $course = $_GET['namec'];
 $width = $_GET['width'];
 $height = $_GET['height'];
