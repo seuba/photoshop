@@ -151,8 +151,8 @@ var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $.ajax({
         url: 'https://fuelseuba.herokuapp.com/?var='+ valor,
         success: function(data){
+           location.reload();
            
-            //process the JSON data etc
         }
 })
 }); 
