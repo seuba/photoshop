@@ -139,7 +139,7 @@ $('#var').val('a');
 <script>
 
 $('input[type=checkbox]').click(function(){
-alert('ok);
+alert('ok');
 $("#bombeta").toggleClass('on');
 $('#form').submit();
 }); 
