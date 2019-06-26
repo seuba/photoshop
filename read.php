@@ -112,7 +112,7 @@ input:checked + .slider:before {
   
   <span class="slider"></span>
 </label>
-<input id="segon" type="text" name="var" value="">
+<input id="segon" type="hidden" name="var" value="">
 </form>
 </center>
 <?php
