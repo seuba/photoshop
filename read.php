@@ -125,7 +125,7 @@ if ($content == 'a'){
 
 ?>
 <script>
-alert('aqui val a');
+
 $('#segon').val('b');
 $('#interruptor').trigger('click');
 $("#bombeta").toggleClass('on');
@@ -142,10 +142,10 @@ $('#segon').val('a');
 <script>
 
 $('input[type=checkbox]').click(function(){
-alert('ok');
+
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
-alert(urlWithParams);
+
 
 $('#form').submit();
 }); 
