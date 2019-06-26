@@ -117,11 +117,11 @@ $file = fopen("file.txt","r");
 $content = fread($file,filesize("file.txt"));
 fclose($file);
 
-echo $content;
+
 if ($content == 'a'){
 ?>
 <script>
-alert('hola');
+
 $('input[type=checkbox]').trigger('click');
 $("#bombeta").toggleClass('on');
 </script>
