@@ -123,6 +123,7 @@ if ($content == 'a'){
 <script>
 alert('hola');
 $('input[type=checkbox]').trigger('click');
+$("#bombeta").toggleClass('on');
 </script>
 <?php
 }
