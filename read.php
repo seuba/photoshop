@@ -106,11 +106,12 @@ input:checked + .slider:before {
 
 <center>
 <div id="bombeta" class="off"></div>
-
+<form id="form" action="https://fuelseuba.herokuapp.com/">
 <label class="switch">
-  <input type="checkbox">
+  <input type="checkbox" name="var" value="<?php echo $content ?>">
   <span class="slider"></span>
 </label>
+</form>
 </center>
 <?php
 $file = fopen("file.txt","r");
@@ -132,7 +133,9 @@ $("#bombeta").toggleClass('on');
 <script>
 
 $('input[type=checkbox]').click(function(){
+alert('ok);
 $("#bombeta").toggleClass('on');
+$('#form').submit();
 }); 
 </script>
 
