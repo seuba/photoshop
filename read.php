@@ -109,7 +109,7 @@ input:checked + .slider:before {
 <form id="form" action="https://fuelseuba.herokuapp.com/">
 <label class="switch">
   <input id="interruptor" type="checkbox">
-  <input id="segon" type="text" name="var" value="">
+  
   <span class="slider"></span>
 </label>
 <input id="segon" type="text" name="var" value="">
