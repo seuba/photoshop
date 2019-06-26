@@ -108,7 +108,7 @@ input:checked + .slider:before {
 <div id="bombeta" class="off"></div>
 <form id="form" action="https://fuelseuba.herokuapp.com/">
 <label class="switch">
-  <input type="checkbox" name="var" value="<?php echo $content ?>">
+  <input id="var" type="checkbox" name="var" value="">
   <span class="slider"></span>
 </label>
 </form>
@@ -120,15 +120,21 @@ fclose($file);
 
 
 if ($content == 'a'){
+
 ?>
 <script>
-
+$('#var').val('b');
 $('input[type=checkbox]').trigger('click');
 $("#bombeta").toggleClass('on');
 </script>
 <?php
 }
-
+if ($content == 'b'){
+?>
+<script>
+$('#var').val('a');
+</script>
+<?php }
 ?>
 <script>
 
