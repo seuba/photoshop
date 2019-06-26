@@ -146,12 +146,12 @@ var valor = $('#segon').val();
 
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
-
+$("#bombeta").toggleClass('on');
 
 $.ajax({
         url: 'https://fuelseuba.herokuapp.com/?var='+ valor,
         success: function(data){
-		$("#bombeta").toggleClass('on');
+		
            location.reload();
            
         }
