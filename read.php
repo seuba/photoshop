@@ -140,7 +140,10 @@ $('#var').val('a');
 
 $('input[type=checkbox]').click(function(){
 alert('ok');
-$("#bombeta").toggleClass('on');
+var targetForm = $('#form');
+var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
+alert(urlWithParams);
+
 $('#form').submit();
 }); 
 </script>
