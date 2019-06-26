@@ -112,7 +112,7 @@ input:checked + .slider:before {
   
   <span class="slider"></span>
 </label>
-<input id="segon" type="text" name="var" value="">
+<input id="segon" type="hidden" name="var" value="">
 </form>
 </center>
 <?php
@@ -125,7 +125,7 @@ if ($content == 'a'){
 
 ?>
 <script>
-alert('aqui val a');
+
 $('#segon').val('b');
 $('#interruptor').trigger('click');
 $("#bombeta").toggleClass('on');
@@ -143,15 +143,15 @@ $('#segon').val('a');
 
 $('input[type=checkbox]').click(function(){
 var valor = $('#segon').val();
-alert('ok');
+
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
-alert(urlWithParams);
+
 
 $.ajax({
         url: 'https://fuelseuba.herokuapp.com/?var='+ valor,
         success: function(data){
-            alert(data);
+           
             //process the JSON data etc
         }
 })
