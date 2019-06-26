@@ -103,6 +103,15 @@ input:checked + .slider:before {
 </style>
 </head>
 <body>
+
+<center>
+<div id="bombeta" class="off"></div>
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+</center>
 <?php
 $file = fopen("file.txt","r");
 $content = fread($file,filesize("file.txt"));
@@ -112,20 +121,13 @@ echo $content;
 if ($content == 'a'){
 ?>
 <script>
+alert('hola');
 $('input[type=checkbox]').trigger('click');
 </script>
 <?php
 }
 
 ?>
-<center>
-<div id="bombeta" class="off"></div>
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider"></span>
-</label>
-</center>
 <script>
 
 $('input[type=checkbox]').click(function(){
