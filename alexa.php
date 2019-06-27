@@ -144,12 +144,9 @@ function GetJsonMessageResponse($RequestMessageType, $EchoReqObj)
 		{
 			
 			/**/
-			$post = [
-    'var' => 'a',
-  
-];
+			
 
-$ch = curl_init('https://fuelseuba.herokuapp.com/');
+$ch = curl_init('https://fuelseuba.herokuapp.com/?var=a');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 
@@ -160,7 +157,7 @@ $response = curl_exec($ch);
 curl_close($ch);
 
 // do anything you want with your response
-var_dump($response);
+//var_dump($response);
 			/**/
 			
 		$return_defaults = array(
