@@ -148,12 +148,12 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => "Your wishes are my command, lights on"
+					'text' => "Your wishes are my command, lights off"
 				) ,
 				'card' => array(
 					'type' => "Simple",
 					'title' => "Lights Home",
-					'content' => "Just turned the lights on"
+					'content' => "Just turned the lights off"
 				) ,
 				'reprompt' => array(
 					'outputSpeech' => array(
@@ -162,7 +162,7 @@ curl_close($ch);
 					)
 				)
 			) ,
-			'shouldEndSession' => true
+			'shouldEndSession' => false
 		);
 		$ReturnValue = json_encode($return_defaults);
 		}
