@@ -13,7 +13,7 @@ $SETUP = array(
 	'ReqValidTime' => 60, 
 	'AWSaccount' => '', 
 	'validIP' => FALSE, 
-	'LC_TIME' => "es_ES"
+	'LC_TIME' => "en_EN"
 
 	
 
@@ -148,12 +148,12 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => "Your wish is my command, lights off, Can I help you with anything else?"
+					'text' => "Your wish is my command, lights on, Can I help you with anything else?"
 				) ,
 				'card' => array(
 					'type' => "Simple",
 					'title' => "Lights Home",
-					'content' => "Just turned the lights off"
+					'content' => "Just turned the lights on"
 				) ,
 				'reprompt' => array(
 					'outputSpeech' => array(
