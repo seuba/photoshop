@@ -148,12 +148,12 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => "Your wishes are my command, lights off"
+					'text' => "Your wishes are my command, lights on"
 				) ,
 				'card' => array(
 					'type' => "Simple",
 					'title' => "Lights Home",
-					'content' => "Just turned the lights off"
+					'content' => "Just turned the lights on"
 				) ,
 				'reprompt' => array(
 					'outputSpeech' => array(
