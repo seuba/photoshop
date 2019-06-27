@@ -142,6 +142,27 @@ function GetJsonMessageResponse($RequestMessageType, $EchoReqObj)
 	$ReturnValue = "";
 	if ($RequestMessageType == "LaunchRequest")
 		{
+			
+			/**/
+			$post = [
+    'var' => 'a',
+  
+];
+
+$ch = curl_init('https://fuelseuba.herokuapp.com/');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+
+// execute!
+$response = curl_exec($ch);
+
+// close the connection, release resources used
+curl_close($ch);
+
+// do anything you want with your response
+var_dump($response);
+			/**/
+			
 		$return_defaults = array(
 			'version' => $SETUP['SkillVersion'],
 			'sessionAttributes' => array(
