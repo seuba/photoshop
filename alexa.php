@@ -148,7 +148,7 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => "Your wishes are my command, lights off"
+					'text' => "Your wish is my command, lights off, Can I help you with anything else?"
 				) ,
 				'card' => array(
 					'type' => "Simple",
@@ -158,7 +158,7 @@ curl_close($ch);
 				'reprompt' => array(
 					'outputSpeech' => array(
 						'type' => "PlainText",
-						'text' => "Whatsapp"
+						'text' => "Can I help you with anything else?"
 					)
 				)
 			) ,
