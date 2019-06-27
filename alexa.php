@@ -193,7 +193,7 @@ function GetJsonMessageResponse($RequestMessageType, $EchoReqObj)
 			//));
 			$SpeakPhrase = "OK";
 			}
-		elseif ($EchoReqObj->request->intent->name == "Tracking") // 2nd Alexa Intent name
+		elseif ($EchoReqObj->request->intent->name == "tracking") // 2nd Alexa Intent name
 			{
 
 			$SpeakPhrase = "OK ok";
