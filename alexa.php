@@ -199,15 +199,15 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => $SpeakPhrase
+					'text' => "ok ok ok"
 				) ,
 				'card' => array(
 					'type' => "Simple",
 					'title' => "Lights",
-					'content' => $SpeakPhrase
+					'content' => "ok ok ok"
 				)
 			) ,
-			'shouldEndSession' => true
+			'shouldEndSession' => false
 		));
 		}
 	  else
