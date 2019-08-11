@@ -1,5 +1,5 @@
 <?php
-$txt = $_GET['var'];
+$txt = $_POST['var'];
 $myfile = fopen("file.txt", "w") or die("Unable to open file!");
 
 fwrite($myfile, $txt);
