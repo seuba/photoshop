@@ -1,3 +1,4 @@
+
 <?php
 
 header('Cache-Control: no-cache, must-revalidate');
@@ -126,10 +127,11 @@ function GetJsonMessageResponse($RequestMessageType, $EchoReqObj)
 	$ReturnValue = "";
 	if ($RequestMessageType == "LaunchRequest")
 		{
-
-$ch = curl_init('https://fuelseuba.herokuapp.com/?var=a');
+$data = array("var" => "a", "courtid" => "1");                                                                    
+$data_string = json_encode($data);  
+$ch = curl_init('https://fuelseuba.herokuapp.com');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
 
 
 $response = curl_exec($ch);
@@ -228,3 +230,4 @@ function ThrowRequestError($code = 400, $msg = 'Bad Request')
 	}
 
 ?>
+
