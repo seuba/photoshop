@@ -8,7 +8,7 @@ header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 $SETUP = array(
 	'SkillName' => "test",
 	'SkillVersion' => '1.0',
-	'ApplicationID' => 'amzn1.ask.skill.2080b1a6-e621-4e8f-bb7b-7df51c551e47', 
+	'ApplicationID' => 'amzn1.ask.skill.2895891b-df17-40a3-8e58-95b0d8072a05', 
 	'CheckSignatureChain' => true, 
 	'ReqValidTime' => 60, 
 	'AWSaccount' => '', 
@@ -148,12 +148,12 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => "Orden aceptada Albert,acabo de apagar las luces"
+					'text' => "Orden aceptada Albert,acabo de activar las luces"
 				) ,
 				'card' => array(
 					'type' => "Simple",
 					'title' => "Lights Home",
-					'content' => "Orden aceptada Albert,acabo de apagar las luces"
+					'content' => "Orden aceptada Albert,acabo de activar las luces"
 				) ,
 				'reprompt' => array(
 					'outputSpeech' => array(
