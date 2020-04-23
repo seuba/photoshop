@@ -126,10 +126,13 @@ function GetJsonMessageResponse($RequestMessageType, $EchoReqObj)
 	$ReturnValue = "";
 	if ($RequestMessageType == "LaunchRequest")
 		{
-
-$ch = curl_init('https://fuelseuba.herokuapp.com/?var=a');
+		
+$myObj->var = "a";
+$myObj->courtid = 1;
+$myJSON = json_encode($myObj);
+$ch = curl_init('https://fuelseuba.herokuapp.com');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $myJSON);
 
 
 $response = curl_exec($ch);
