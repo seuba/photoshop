@@ -147,9 +147,13 @@ var valor = $('#segon').val();
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
-
+var data = '{"valor":" + valor + "courtid":"1"};
 $.ajax({
         url: 'https://fuelseuba.herokuapp.com/?var='+ valor,
+	dataType: 'json',
+        contentType: 'application/json',
+	data: JSON.stringify(data),
+	processData: false,
         success: function(data){
 		
            location.reload();
