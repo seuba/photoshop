@@ -121,21 +121,21 @@ $content = fread($file,filesize("file.txt"));
 fclose($file);
 
 
-if ($content == 'a'){
+if ($content == 'a1'){
 
 ?>
 <script>
 
-$('#segon').val('b');
+$('#segon').val('b1');
 $('#interruptor').trigger('click');
 $("#bombeta").toggleClass('on');
 </script>
 <?php
 }
-if ($content == 'b'){
+if ($content == 'b1'){
 ?>
 <script>
-$('#segon').val('a');
+$('#segon').val('a1');
 </script>
 <?php }
 ?>
