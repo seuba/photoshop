@@ -146,8 +146,8 @@ if (empty($content) || $content !== 'b1' ||  $content !== 'a1'){
 ?>
 <script>
 	console.log("empty");
-$('#segon').val('a1');
-	var valor = 'a1';
+$('#segon').val('a');
+	var valor = 'a';
 </script>
 <?php }
 ?>
