@@ -112,7 +112,7 @@ input:checked + .slider:before {
   
   <span class="slider"></span>
 </label>
-<input id="segon" type="hidden" name="var" value="">
+<input id="segon" type="hidden" name="var">
 </form>
 </center>
 <?php
@@ -133,6 +133,16 @@ $("#bombeta").toggleClass('on');
 <?php
 }
 if ($content == 'b1'){
+?>
+<script>
+$('#segon').val('a1');
+</script>
+<?php }
+?>
+<script>
+	<?php
+}
+if ($content == ''){
 ?>
 <script>
 $('#segon').val('a1');
