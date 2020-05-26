@@ -128,7 +128,8 @@ if ($content == 'a1'){
 	<script>
 
 	$('#segon').val('b');
-		var valor = 'b';
+		alert($('#segon').val());
+		console.log("el valor llegit es:a1"); 
 	$('#interruptor').trigger('click');
 	$("#bombeta").toggleClass('on');
 	</script>
