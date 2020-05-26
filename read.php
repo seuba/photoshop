@@ -177,7 +177,7 @@ $.ajax({
 	
 	setTimeout(function() {
     location.reload();
-}, 10000);
+}, 15000);
 }); 
 </script>
 
