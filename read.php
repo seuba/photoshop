@@ -154,12 +154,12 @@ $('#segon').val('a1');
 <script>
 
 $('input[type=checkbox]').click(function(){
-var valor2 = "a";
-console.log(valor2);
+var valor = $('#segon').val();
+
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
-var formData = '{"var":"'+ valor2 +'","courtid":"1"}';
+var formData = '{"var":"'+ valor +'","courtid":"1"}';
 	
 
 $.ajax({
