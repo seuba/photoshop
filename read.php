@@ -139,7 +139,7 @@ if ($content == 'b1'){
 	</script>
 <?php }
 
-if ($content == ''){
+if (empty($content)){
 ?>
 <script>
 $('#segon').val('a1');
