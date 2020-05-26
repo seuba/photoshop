@@ -124,24 +124,21 @@ fclose($file);
 if ($content == 'a1'){
 
 ?>
-<script>
+	<script>
 
-$('#segon').val('b1');
-$('#interruptor').trigger('click');
-$("#bombeta").toggleClass('on');
-</script>
+	$('#segon').val('b1');
+	$('#interruptor').trigger('click');
+	$("#bombeta").toggleClass('on');
+	</script>
 <?php
 }
 if ($content == 'b1'){
 ?>
-<script>
-$('#segon').val('a1');
-</script>
+	<script>
+	$('#segon').val('a1');
+	</script>
 <?php }
-?>
-<script>
-	<?php
-}
+
 if ($content == ''){
 ?>
 <script>
