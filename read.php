@@ -154,7 +154,7 @@ $('#segon').val('a1');
 <script>
 
 $('input[type=checkbox]').click(function(){
-var valor2 = 'a1';
+var valor2 = "a";
 console.log(valor2);
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
