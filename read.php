@@ -112,7 +112,8 @@ input:checked + .slider:before {
   
   <span class="slider"></span>
 </label>
-<input id="segon" type="hidden" name="var">
+<input id="segon" type="hidden" name="val">
+	
 </form>
 </center>
 <?php
@@ -154,17 +155,22 @@ var valor = $('#segon').val();
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
-var data = {"valor":"' + valor +'","courtid":"1"};
+var formData = {"valor":"' + valor +'","courtid":"1"};
+
 $.ajax({
-        url: 'https://fuelseuba.herokuapp.com/?var='+valor,
-	dataType: 'json',
-        contentType: 'application/json',
-        success: function(data){
+	type: "POST",
+	url: "https://fuelseuba.herokuapp.com/",
+	data: formData,
+	success: function(){},
+	dataType: "json",
+	contentType : "application/json",
+	success: function(data){
 		
            location.reload();
            
         }
 })
+	
 }); 
 </script>
 
