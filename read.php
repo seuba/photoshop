@@ -128,7 +128,7 @@ if ($content == 'a1'){
 	<script>
 
 	$('#segon').val('b');
-		alert($('#segon').val());
+		
 		console.log("el valor llegit es:a1"); 
 	$('#interruptor').trigger('click');
 	$("#bombeta").toggleClass('on');
@@ -175,7 +175,9 @@ $.ajax({
         }
 })
 	
-	$('#form').submit();
+	setTimeout(function() {
+    location.reload();
+}, 5000);
 }); 
 </script>
 
