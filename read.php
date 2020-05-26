@@ -106,12 +106,12 @@ input:checked + .slider:before {
 
 <center>
 <div id="bombeta" class="off"></div>
-<form id="form" action="https://fuelseuba.herokuapp.com/">
+<form id="form" action="https://fuelseuba.herokuapp.com/read.php">
 <label class="switch">
   <input id="interruptor" type="checkbox">
   
   <span class="slider"></span>
-</label>
+</label> 
 <input id="segon" type="hidden" name="val">
 	
 </form>
@@ -128,6 +128,7 @@ if ($content == 'a1'){
 	<script>
 
 	$('#segon').val('b1');
+		var valor = 'b1';
 	$('#interruptor').trigger('click');
 	$("#bombeta").toggleClass('on');
 	</script>
@@ -137,6 +138,7 @@ if ($content == 'b1'){
 ?>
 	<script>
 	$('#segon').val('a1');
+		var valor = 'a1';
 	</script>
 <?php }
 
@@ -144,18 +146,19 @@ if (empty($content)){
 ?>
 <script>
 $('#segon').val('a1');
+	var valor = 'a1';
 </script>
 <?php }
 ?>
 <script>
 
 $('input[type=checkbox]').click(function(){
-var valor = $('#segon').val();
-
+var valor2 = valor;
+console.log(valor);
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
-var formData = '{"val":"' + valor +'","courtid":"1"}';
+var formData = '{"val":"' + valor2 +'","courtid":"1"}';
 
 $.ajax({
 	type: "POST",
