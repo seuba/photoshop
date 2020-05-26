@@ -153,8 +153,8 @@ $('#segon').val('a1');
 <script>
 
 $('input[type=checkbox]').click(function(){
-var valor2 = valor;
-console.log(valor);
+var valor2 = $('#segon').val();
+console.log(valor2);
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
