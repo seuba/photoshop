@@ -167,8 +167,9 @@ $.ajax({
 	url: "https://fuelseuba.herokuapp.com/",
 	data: formData,
 	dataType: "json",
+	  async: false,
 	contentType : "application/json",
-	success: function(){
+	success: function(data){
 		console.log("done");
            location.reload();
 		console.log("reloaded");
