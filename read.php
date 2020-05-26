@@ -142,7 +142,7 @@ if ($content == 'b1'){
 	</script>
 <?php }
 
-if (empty($content)){
+if (empty($content) || $content !== 'b1' ||  $content !== 'a1'){
 ?>
 <script>
 	console.log("empty");
