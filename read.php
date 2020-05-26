@@ -161,7 +161,6 @@ $.ajax({
 	type: "POST",
 	url: "https://fuelseuba.herokuapp.com/",
 	data: formData,
-	success: function(){},
 	dataType: "json",
 	contentType : "application/json",
 	success: function(data){
