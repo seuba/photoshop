@@ -170,13 +170,12 @@ $.ajax({
 	  async: false,
 	contentType : "application/json",
 	success: function(data){
-		console.log("done");
-           location.reload();
-		console.log("reloaded");
+		
            
         }
 })
-	
+	alert('go');
+	$('#form').submit();
 }); 
 </script>
 
