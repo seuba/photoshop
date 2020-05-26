@@ -160,7 +160,9 @@ var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
 var formData = '{"val":"'+ valor2 +'","courtid":"1"}';
-
+	var formData2 = '{"val":""'+ valor2 +'"","courtid":"1"}';
+alert(formData);
+	alert("dos:" + formData2);
 $.ajax({
 	type: "POST",
 	url: "https://fuelseuba.herokuapp.com/",
