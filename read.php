@@ -145,6 +145,7 @@ if ($content == 'b1'){
 if (empty($content)){
 ?>
 <script>
+	console.log("empty");
 $('#segon').val('a1');
 	var valor = 'a1';
 </script>
