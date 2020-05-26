@@ -127,8 +127,8 @@ if ($content == 'a1'){
 ?>
 	<script>
 
-	$('#segon').val('b1');
-		var valor = 'b1';
+	$('#segon').val('b');
+		var valor = 'b';
 	$('#interruptor').trigger('click');
 	$("#bombeta").toggleClass('on');
 	</script>
@@ -137,8 +137,8 @@ if ($content == 'a1'){
 if ($content == 'b1'){
 ?>
 	<script>
-	$('#segon').val('a1');
-		var valor = 'a1';
+	$('#segon').val('a');
+		var valor = 'a';
 	</script>
 <?php }
 
@@ -168,9 +168,10 @@ $.ajax({
 	data: formData,
 	dataType: "json",
 	contentType : "application/json",
-	success: function(data){
-		
+	success: function(){
+		console.log("done");
            location.reload();
+		console.log("reloaded");
            
         }
 })
