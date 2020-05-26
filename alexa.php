@@ -151,12 +151,12 @@ curl_close($ch);
 			'response' => array(
 				'outputSpeech' => array(
 					'type' => "PlainText",
-					'text' => "Orden aceptada Albert,acabo de activar las luces"
+					'text' => "Acabo de abrir la puerta"
 				) ,
 				'card' => array(
 					'type' => "Simple",
 					'title' => "Lights Home",
-					'content' => "Orden aceptada Albert,acabo de activar las luces"
+					'content' => "Acabo de abrir la puerta"
 				) ,
 				'reprompt' => array(
 					'outputSpeech' => array(
