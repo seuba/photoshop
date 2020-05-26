@@ -155,7 +155,7 @@ var valor = $('#segon').val();
 var targetForm = $('#form');
 var urlWithParams = targetForm.attr('action') + "?" + targetForm.serialize();
 $("#bombeta").toggleClass('on');
-var formData = {"valor":"' + valor +'","courtid":"1"};
+var formData = '{"valor":"' + valor +'","courtid":"1"}';
 
 $.ajax({
 	type: "POST",
