@@ -174,7 +174,7 @@ $.ajax({
            
         }
 })
-	alert('go');
+	
 	$('#form').submit();
 }); 
 </script>
