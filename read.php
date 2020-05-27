@@ -11,26 +11,28 @@ body{
 	font-family:arial;
 	
 }
-off{
+.off{
 
-    width: 165px;
-    height: 304px;
-    background: url(door_close.png);
-    background: url(door_close.png);
-  
-    background-size: 165px;
+    width: 200px;
+    height: 300px;
+    background: url(house.png);
+    background: url(house.png);
+    background-position: 33px top;
+    background-size: 373px;
     background-repeat: no-repeat;
 	
 	}
 	
 .on{
- width: 165px;
-    height: 304px;
-    background: url(door_open.png);
-    background: url(door_open.png);
-   
-    background-size: 165px;
+ width: 212px;
+    height: 300px;
+    background: url(house.png);
+    background: url(house.png);
+    background-position: -158px top;
+    background-size: 373px;
     background-repeat: no-repeat;
+
+}
 .switch {
   position: relative;
   display: inline-block;
