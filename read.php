@@ -15,8 +15,8 @@ body{
 
     width: 165px;
     height: 304px;
-    background: url(door_close.png);
-    background: url(door_close.png);
+    background: url(door_close.PNG);
+    background: url(door_close.PNG);
   
     background-size: 165px;
     background-repeat: no-repeat;
